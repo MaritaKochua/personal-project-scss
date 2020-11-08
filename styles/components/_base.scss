@@ -1,0 +1,40 @@
+@function percent($wid, $res: 1920){
+    @return $wid * 100 / $res * 1%;
+}
+
+@mixin desk-main ($wid){
+    width: percent($wid);
+    margin-right: auto;
+    margin-left: auto;
+    @content;
+}
+
+@mixin row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$main-font: 'Open Sans', sans-serif;
+$main-bg: #0E0E0E;
+$desk-2: 1920px;
+$desk-1: 1024px;
+$tablet: 768px;
+$mobile: 320px;
+
+@mixin desktop {
+    @media (min-width: #{$desk-1}) {
+      @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desk-1 - 1px}) {
+      @content;
+    }
+}
+@mixin mobile {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+      @content;
+    }
+}

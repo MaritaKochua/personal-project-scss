@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="31" viewBox="0 0 48 31">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Menu_Button" data-name="Menu Button" width="48" height="31" transform="translate(251 18)" fill="#3ab6b2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(-251 -18)">
+    <g id="Menu_Button-2" data-name="Menu Button" transform="translate(251 18)">
+      <g id="Menu_Button-3" data-name="Menu Button" transform="translate(-251 -18)">
+        <rect id="Menu_Button-4" data-name="Menu Button" width="48" height="31" transform="translate(251 18)" fill="#3ab6b2"/>
+        <g id="Clip" clip-path="url(#clip-path)">
+          <g id="Menu_Button-5" data-name="Menu Button" transform="translate(252.78 19.78)" fill="rgba(58,182,178,0)" stroke="#fff" stroke-linejoin="round" stroke-width="1">
+            <rect width="44.44" height="27.44" stroke="none"/>
+            <rect x="0.5" y="0.5" width="43.44" height="26.44" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <rect id="Seperator" width="22" height="2" transform="translate(13 9)" fill="#fff"/>
+      <rect id="Seperator-2" data-name="Seperator" width="22" height="2" transform="translate(13 14)" fill="#fff"/>
+      <rect id="Seperator-3" data-name="Seperator" width="22" height="2" transform="translate(13 19)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

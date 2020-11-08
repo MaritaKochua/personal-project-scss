@@ -1,0 +1,16 @@
+@include mobile{
+    .comp-1 div{
+        padding: 0 21px;
+        width: 100%;
+        height: 67px;
+        nav{
+            display: none;
+        }
+    }
+  #burger{
+      display: none;
+  }
+  #logo{
+      width: 92px;
+  }
+}

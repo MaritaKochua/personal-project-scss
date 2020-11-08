@@ -1,0 +1,27 @@
+
+.comp-1{
+    background-color: $main-bg;
+    div{
+        @include desk-main(1168);
+        @include row;
+        height: 101px;
+        padding-top: 2px;
+        nav{
+            width: percent(739, 1168);
+            color: #fff;
+            ul{
+                width: 100%;
+                @include row;
+                font-size: 14px;
+                font-family: $main-font;
+                vertical-align: middle;
+                padding-bottom: 4px;
+            }
+        }
+    }
+    @include desktop{
+        #burger, #burger2{
+            display: none;
+        }
+    }
+}
