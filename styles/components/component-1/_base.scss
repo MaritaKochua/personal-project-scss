@@ -1,0 +1,22 @@
+
+.comp-1{
+    background-color: $main-bg;
+    div{
+        @include wid-auto(1168);
+        @include row;
+        height: 101px;
+        padding-top: 2px;
+        border-bottom: 1px solid #0e0e0e;
+        nav{
+            width: percent(739, 1168);
+            ul{
+                width: 100%;
+                @include row;
+                font-size: 14px;
+                vertical-align: middle;
+                padding-bottom: 4px;
+                color: #fff;
+            }
+        }
+    }
+}

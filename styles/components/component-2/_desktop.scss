@@ -1,0 +1,6 @@
+.comp-2{
+    @include desktop{
+        min-height: 760px;
+        padding: 236px 0;
+    }
+}

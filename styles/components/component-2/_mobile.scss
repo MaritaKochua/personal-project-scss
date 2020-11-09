@@ -1,0 +1,35 @@
+@include mobile{
+    .comp-2{
+        padding: 42px 22px 58px 22px;
+        max-height: 212px;
+        div{
+            width: 100%;
+        }
+        img{
+            display:none;
+        }
+        .cover{
+            font-size: 29px;
+            line-height: 30px;
+            letter-spacing: 0.01px;
+        }
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 9px;
+            line-height: 18px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 10px;
+            letter-spacing: 0.45px;
+        }
+        button{
+            font-size: 7px;
+            width: 60px;
+            height: 15px;
+            outline: 2px solid $main-teal;
+        }
+    }
+}

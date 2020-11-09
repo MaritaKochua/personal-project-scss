@@ -1,0 +1,21 @@
+@include tablet{
+    .comp-2{
+        padding: 144px 0 186px 0;
+        div{
+            width: 100%;
+        }
+        img{
+            display: none;
+        }
+        .cover{
+            font-size: 71.7px;
+        }
+        h2{
+        font-size: 58.8px;
+        }
+        p{
+            font-size: 19px;
+            margin-bottom: 22px;
+        }
+    }
+}

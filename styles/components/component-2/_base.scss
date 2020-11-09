@@ -1,0 +1,46 @@
+.comp-2{
+    background-color: #292929;
+    position: relative;
+    div{
+        @include wid-auto(800);
+        text-align: center;
+        color: #fff;
+    }
+    .cover{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 74px;
+        line-height: 70px;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+    h2{
+        font-weight: 200;
+        font-size: 62px;
+        color: #fff;
+    }
+    p{
+        font-size: 20px;
+        line-height: 52px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        @include l-spacing(-4);
+        color: #fff;
+    }
+    button{
+        @include teal-btn(138px, 40px);
+        border: 1px solid #fff;
+        outline: 3px solid $main-teal;
+    }
+    img{
+        position: absolute;
+        top: percent(300, 760);
+        cursor: pointer;
+        &:first-of-type{
+            right: 38px;
+        }
+        &:last-of-type{
+            left: 38px;
+        }
+    }
+}

@@ -1,28 +1,48 @@
+$main-font:  'Raleway', sans-serif;
+$second-font: 'Open Sans', sans-serif;
+$desk-2: 1920px;
+$desk-1: 1024px;
+$tablet: 768px;
+$mobile: 320px;
+
+h1,
+h2,
+h3,
+h4,
+ul{
+  font-family: $main-font;
+  color: $main-c;
+}
+p{
+  font-family: $second-font;
+  color: $second-c;
+}
+
 @function percent($wid, $res: 1920){
     @return $wid * 100 / $res * 1%;
 }
-
-@mixin desk-main ($wid){
+@mixin center{
+    margin-left: auto;
+    margin-right: auto;
+    @content;
+}
+@mixin wid-auto ($wid){
     width: percent($wid);
     margin-right: auto;
     margin-left: auto;
     @content;
 }
-
 @mixin row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
-$main-font: 'Open Sans', sans-serif;
-$main-bg: #0E0E0E;
-$desk-2: 1920px;
-$desk-1: 1024px;
-$tablet: 768px;
-$mobile: 320px;
-
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @mixin desktop {
     @media (min-width: #{$desk-1}) {
       @content;
@@ -37,4 +57,56 @@ $mobile: 320px;
     @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
       @content;
     }
+}
+@mixin l-spacing($xd) {
+    letter-spacing: ($xd/ 1000) * 1em;
+}
+@mixin teal-btn ($w, $h){
+    background-color: $main-teal;
+    color: #fff;
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 700;
+    width: $w;
+    height: $h;
+    @content;
+}
+h1{
+    font-size: 31px;
+    line-height: 34px;
+    font-weight: 600;
+    span{
+        color: $main-teal;
+    }
+}
+.title{
+    margin-bottom: 122px;
+    position: relative;
+    h1{
+        text-align: center;
+        @include center;
+    }
+    div{
+        @include row;
+        position: absolute;
+        top: 46px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    img{
+        margin: 0 10px;
+        padding-bottom: 4px;
+    }
+    hr{
+        width: 37px;
+        height: 1px;
+        background-color: #D3D3D3;
+        border: none;
+    }
+}
+@mixin i-round($pad, $c:#3B3B3B){
+        background-color: $c;
+        padding: $pad;
+        border-radius: 50%;
+        box-sizing: content-box;
 }
