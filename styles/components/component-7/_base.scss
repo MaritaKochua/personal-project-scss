@@ -1,0 +1,39 @@
+footer{
+    color: #fff;
+    >div{
+        @include wid-auto(284);
+    }
+    padding: 46px 0 58px 0;
+    background-color: #111111;
+    .social{
+        @include row;
+        margin-bottom: 46px;
+        div{
+            background-color: #252525;
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            position: relative;
+            &:hover{
+                background-color: #46629E;
+                cursor: pointer;
+            }
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    > img{
+        @include center;
+        margin-bottom: 42px;
+    } p{
+        @include center;
+        font-size: 11px;
+        color: #FEFEFE;
+        @include l-spacing(16);
+        text-align: center;
+    }
+}

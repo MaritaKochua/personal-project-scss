@@ -96,7 +96,7 @@
     $count: 1;
     @while $count < 8 {
         .p#{$count} {
-            background: #000 url(../../../images/gallery/fl#{$count}.jpg) no-repeat center;
+            background: #000 url(images/gallery/fl#{$count}.jpg) no-repeat center;
             background-size: cover;
             }
             $count: $count + 1;
