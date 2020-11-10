@@ -1,0 +1,64 @@
+.comp-6{
+    padding: 92px 0;
+    .title{
+        margin-bottom: 118px;
+    }
+    .content{
+        @include wid-auto(945);
+        > div{
+            width: percent(770, 945);
+            padding-right: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: #606060;
+            font-weight: 500;
+            font-family: $main-font;
+            line-height: 24px;
+            @include l-spacing(40);
+            @include center;
+            @include row;
+            > div{
+                @include column;
+            }
+        }
+        form{
+            padding-top: 85px;
+            &::placeholder{
+                color: #7C7C7C;
+                font-family: $main-font;
+                font-size: 14px;
+            }
+        }
+        input{
+            height: 45px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #D4D4D4;
+            padding: 16px 12px;
+        }
+        fieldset{
+            width: 100%;
+            border: none;
+            @include row;
+            input{
+                width: calc((100% - 16px) / 2);
+                display: inline-block;
+            }
+        }
+        textarea{
+            width: 100%;
+            height: 171px;
+            padding: 16px 12px;
+            border: 1px solid #D4D4D4;
+        }
+        .img-6{
+            height: 34px;
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 16px;
+            @include teal-btn(160px, 42px);
+        }
+    }
+}

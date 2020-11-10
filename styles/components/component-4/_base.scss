@@ -1,14 +1,11 @@
 .comp-4{
     background-color: $bg-2;
-    padding: 140px 0 140px 0;
+    padding: 140px 0 150px 0;
     >div{
         @include wid-auto(1174);
     }
     .title div{
         top: 40px;
-        img{
-            padding-bottom: 2px;
-        }
     }
     h1{
         color: #FFFEFE;
