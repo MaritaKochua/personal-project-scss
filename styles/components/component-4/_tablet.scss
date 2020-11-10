@@ -1,0 +1,18 @@
+.comp-4{
+    background-color: #000;
+    @include tablet-padding;
+    padding-bottom: 75px;
+    .content{
+        padding-top: 10px;
+        width: 300px;
+        @include column;
+        @include center;
+        text-align: center;
+        article{
+            margin-bottom: 75px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

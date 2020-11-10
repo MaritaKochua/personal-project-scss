@@ -1,30 +1,22 @@
 .comp-4{
     background-color: $bg-2;
     padding: 140px 0 150px 0;
-    >div{
-        @include wid-auto(1174);
-    }
-    .title div{
-        top: 40px;
-    }
     h1{
         color: #FFFEFE;
     }
     .content{
         @include row;
         article{
-            width: percent(297, 1174);
-            padding-top: 48px;
             @include column;
             div{
                 height: 144px;
                 width: 124px;
-                background-image: url(../../../images/hexa.svg);
+                background-image: url(images/hexa.svg);
                 background-position: center;
                 position: relative;
                 margin-bottom: 40px;
                 &:hover{
-                    background-image: url(../../../images/hexa2.svg);
+                    background-image: url(images/hexa2.svg);
                 }
             }
             img{

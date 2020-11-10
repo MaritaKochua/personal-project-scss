@@ -1,53 +1,7 @@
 @include tablet{
-    .comp-3{
-        display: none;
-    }
-    .comp-3b{
-        @include tablet-padding;
-        .img-3{
-            height: 421px;
-            width: 100%;
-            background: #000 url(images/gallery/ex.jpg);
-        }
-        > h1{
-            font-size: 25px;
-            @include l-spacing(-20);
-            border-bottom: 1px solid #E6E6E6;
-            line-height: 30px;
-            padding-bottom: 17px;
-            margin-top: 28px;
-        }
-        p, li{
-            font-size: 13px;
-            line-height: 23px;
-            color: #525252;
-        }
-        p{
-            margin: 18px 0 36px 0;
-        }
-        ul{
-            width: percent(550,718);
-            margin-bottom: 40px;
-        }
-        li{
-            margin-bottom: 20px;
-            padding-left: 31px;
-            position: relative;
-            &::before{
-                content: "\f00c";
-                font-family: "FontAwesome";
-                color: #fff;
-                font-size: 10px;
-                font-weight: 300;
-                @include roundify(16px);
-                position: absolute;
-                line-height: 16px;
-                top: 4px;
-                left: 0;
-            }
-        }
-        button{
-            @include teal-btn(138px, 42px);
+    footer{
+        .social{
+            margin-bottom: 48px;
         }
     }
 }

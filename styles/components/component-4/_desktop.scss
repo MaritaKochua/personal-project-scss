@@ -1,0 +1,16 @@
+comp-4{
+    @include desktop{
+        >div{
+            @include wid-auto(1174);
+        }
+        .title div{
+            top: 40px;
+        }
+        article{
+            @include desktop{
+                width: percent(297, 1174);
+                padding-top: 48px;
+        }
+    }
+}
+}

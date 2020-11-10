@@ -1,28 +1,18 @@
 .comp-6{
-    padding: 92px 0 122px 0;
-    .title{
-        margin-bottom: 118px;
-    }
     .content{
-        @include wid-auto(945);
         > div{
-            width: percent(770, 945);
-            padding-right: 20px;
             text-align: center;
-            font-size: 15px;
             color: #606060;
             font-weight: 500;
             font-family: $main-font;
             line-height: 24px;
+            font-size: 15px;
             @include l-spacing(40);
             @include center;
             @include row;
             > div{
                 @include column;
             }
-        }
-        form{
-            padding-top: 80px;
         }
         input{
             height: 45px;
