@@ -1,0 +1,21 @@
+@include mobile{
+    footer{
+        > img{
+            width: 110px;
+            margin-top: -2px;
+        }
+        .social{
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 230px;
+            margin-bottom: 36px;
+            div{
+                margin: 4.5px;
+            }
+        }
+        > img{
+            margin-bottom: 34px;
+        }
+    }
+}

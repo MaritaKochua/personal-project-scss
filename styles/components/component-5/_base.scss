@@ -1,5 +1,8 @@
 .comp-5{
     .grid-5{
+        .icons2{
+            display: none;
+        }
         width: 100%;
         display: grid;
         > div{
@@ -16,29 +19,28 @@
                     color: #fff;
                     font-weight: 600;
                 }
-                span{
-                    color: $main-teal;
-                    font-style: italic;
-                    font-weight: 600;
-                    letter-spacing: 0.02em;
-                }
                 .text{
                     position: absolute;
-                    background-color: #000;
+                    background-color: rgba(0,0,0,0.85);
                     bottom: 0;
                     width: 100%;
                     text-align: center;
-                }
-                i{
-                    border: 2px solid $main-teal;
-                    &:hover{
-                        background-color: $main-teal;
+                    > span{
+                        color: $main-teal;
+                        font-style: italic;
+                        font-weight: 600;
                     }
                 }
                 .icons{
                     position: absolute;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    i{
+                        border: 2px solid $main-teal;
+                        &:hover{
+                            background-color: $main-teal;
+                        }
+                    }
                 }
             }
             &:hover{

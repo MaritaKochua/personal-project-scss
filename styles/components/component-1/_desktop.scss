@@ -2,4 +2,10 @@
     #burger, #burger2{
         display: none;
     }
+    nav li{
+        margin-right: 10px;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
 }

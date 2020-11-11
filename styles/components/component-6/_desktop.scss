@@ -9,10 +9,26 @@
             > div{
                 width: percent(770, 945);
                 padding-right: 20px;
+                @include row;
             }
+        }
+        input{
+            margin-bottom: 15px;
+        }
+        textarea{     
+            height: 171px;
+            margin-bottom: 12px;
         }
         form{
             padding-top: 80px;
+            fieldset{
+                width: 100%;
+                border: none;
+                @include row;
+                input:first-of-type{
+                    margin-right: 16px;
+                }
+            }
         }
     }
 }

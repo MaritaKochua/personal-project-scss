@@ -1,0 +1,25 @@
+.comp-6{
+    @include mobile{
+        padding: 22px 20px 44px 20px;
+        .content >div{
+            padding-top: 10px;
+            @include column;
+            > div{
+                margin-bottom: 30px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        form{
+            padding-top: 40px;
+        }
+        input{
+            margin-bottom: 9px;
+        }
+        textarea{     
+            height: 141px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,7 +1,11 @@
 @include tablet{
     footer{
         .social{
-            margin-bottom: 48px;
+            width: 284px;
+            margin-bottom: 46px;
+        }
+        > img{
+            margin-bottom: 42px;
         }
     }
 }

@@ -9,14 +9,12 @@
             font-size: 15px;
             @include l-spacing(40);
             @include center;
-            @include row;
             > div{
                 @include column;
             }
         }
         input{
-            height: 45px;
-            margin-bottom: 15px;
+            height: 46px;
             padding: 6px 10px 9px 10px;
         }
         input, textarea{
@@ -31,16 +29,9 @@
             }
         }
         fieldset{
-            width: 100%;
             border: none;
-            @include row;
-            input{
-                width: calc((100% - 16px) / 2);
-                display: inline-block;
-            }
         }
         textarea{     
-            height: 171px;
             padding: 18px 10px;
         }
         .img-6{
@@ -49,7 +40,6 @@
             margin-bottom: 20px;
         }
         button{
-            margin-top: 12px;
             @include teal-btn(160px, 42px);
         }
     }

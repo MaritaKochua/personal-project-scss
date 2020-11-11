@@ -1,11 +1,9 @@
 .comp-4{
     background-color: $bg-2;
-    padding: 140px 0 150px 0;
     h1{
         color: #FFFEFE;
     }
     .content{
-        @include row;
         article{
             @include column;
             div{
@@ -15,6 +13,7 @@
                 background-position: center;
                 position: relative;
                 margin-bottom: 40px;
+                cursor: pointer;
                 &:hover{
                     background-image: url(images/hexa2.svg);
                 }
@@ -27,14 +26,11 @@
             }
             h3{
                color: $main-teal; 
-               font-size: 20px;
                font-weight: bold;
-               margin-bottom: 14px;
-               @include l-spacing(20);
+               text-align: center;
             }
             p{
                 color: #fff;
-                font-size: 14px;
                 line-height: 22px;
                 text-align: center;
                 @include l-spacing(16);

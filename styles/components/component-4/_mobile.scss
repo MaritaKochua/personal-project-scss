@@ -1,0 +1,29 @@
+@include mobile{
+.comp-4{
+        padding: 36px 20px 40px 20px;
+        .content{
+            padding-top: 20px;
+            width: 100%;
+            @include column;
+            @include center;
+            article{
+                margin-bottom: 40px;
+                div{
+                    background-size: contain;
+                    height: 137px;
+                    width: 118px; 
+                }
+                h3{
+                    font-size: 19px;
+                    @include l-spacing(16);
+                    padding-top: 2px;
+                    margin-bottom: 12px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+
+        }
+    }  
+}

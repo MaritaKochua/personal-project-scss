@@ -1,14 +1,12 @@
 footer{
     color: #fff;
     >div{
-        width: 284px;
         @include center;
     }
     padding: 46px 0 58px 0;
     background-color: #111111;
     .social{
         @include row;
-        margin-bottom: 46px;
         div{
             background-color: #252525;
             width: 40px;
@@ -36,5 +34,6 @@ footer{
         color: #FEFEFE;
         @include l-spacing(16);
         text-align: center;
+        font-weight: 400;
     }
 }

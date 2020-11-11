@@ -1,6 +1,26 @@
 .comp-6{
-    padding: 50px 24px 82px 24px;
+    @include tablet{
+        padding: 50px 24px 82px 24px;
+    .content >div{
+        @include row;
+    }
+    input{
+        margin-bottom: 15px;
+    }
+    textarea{     
+        height: 171px;
+        margin-bottom: 12px;
+    }
     form{
         padding-top: 44px;
+        fieldset{
+            width: 100%;
+            border: none;
+            @include row;
+            input:first-of-type{
+                margin-right: 12px;
+            }
+        }
+    }
     }
 }

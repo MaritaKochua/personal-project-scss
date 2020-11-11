@@ -4,7 +4,7 @@
     }
     .comp-3{
         @include wid-auto(1174);
-        padding: 114px 0 124px 0;
+        padding: 114px 0 110px 0;
         > div{
             @include row;
             align-items: flex-start;
@@ -15,38 +15,51 @@
             position: relative;
             img{
                 width: 100%;
+                z-index: 4;
             }
             .inner-img{
+                width: percent(468, 510);
+                height: 65%;
                 position: absolute;
                 top: percent(21, 400);;
                 left: percent(21, 510);
+                overflow: hidden;
             }
         }
-        .grid-3{
-            width: percent(575, 1174);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 40px 110px 110px 110px;
-            row-gap: 17px;
-            column-gap: 45px;
-            align-items: start;
-            padding-left: 2px;
+        .side{
+            width: percent(578, 1174);
+            padding-left: 4px;
+            > div{
+                margin-top: 48px;
+                @include row;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                > div{
+                    width: calc((100% - 38px) / 2);
+                    margin-bottom: 50px;
+                    @include row;
+                    flex-wrap: wrap;
+                }
+            }
+            .text{
+                width: 66%;
+            }
             h1{
-                grid-column: 1 / 3;
                 @include l-spacing(-20);
+                white-space: nowrap;
+                margin-bottom: 22px;
             }
             p{
-                grid-column: 1 / 3;
                 line-height: 27px;
                 font-size: 14px;
             }
-            img{
-                width: 24px;
-                height: 24px;
-                float: left;
-                margin-left: 1px;
-                margin-right: 28px;
-                @include i-round(19.5px);
+            i{
+                font-size: 24px;
+                color: #fff;
+                @include roundify(63px, #3B3B3B);
+                line-height: 63px;
+                margin: 0 24px 12px 4px;
             }
             h3{
                 font-size: 18px;
@@ -58,6 +71,7 @@
                 font-size: 13px;
                 line-height: 22px;
                 margin-top: 10px;
+                padding-left: 4px;
             }
         }
     }

@@ -1,16 +1,29 @@
-comp-4{
+.comp-4{
     @include desktop{
+        padding: 140px 0 110px 0;
         >div{
             @include wid-auto(1174);
         }
         .title div{
             top: 40px;
         }
+        .content{
+            @include row;
+        }
         article{
             @include desktop{
                 width: percent(297, 1174);
                 padding-top: 48px;
+                margin-bottom: 40px;
         }
+        h3{
+            font-size: 20px;
+            @include l-spacing(20);
+            margin-bottom: 14px;
+         }
+         p{
+             font-size: 14px;
+         }
     }
 }
 }

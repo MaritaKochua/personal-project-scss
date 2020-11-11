@@ -15,19 +15,20 @@
                 }
             }
             .icons{
-                top: 44%;
+                top: 42%;
             }
             .text{
                 height: 58px;
                 padding-top: 14px;
+                >   span{
+                    font-size: 10px;
+                    @include l-spacing(40);
+                }
             }
             h4{
                 font-size: 12px;
                 margin-bottom: 2px;
                 line-height: 12px;
-            }
-            span{
-                font-size: 10px;
             }
         }
     }

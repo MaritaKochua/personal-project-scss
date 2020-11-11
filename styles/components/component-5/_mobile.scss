@@ -1,0 +1,56 @@
+.comp-5{
+    @include mobile{
+        padding: 36px 20px 0px 20px;
+        .grid-5{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 163px);
+            grid-gap: 7px;
+            &div:nth-last-of-type(1),
+            &div:nth-last-of-type(2){
+                display: none;
+            }
+            > div{
+                position: relative;
+            }
+            .icons{
+                display: none;
+            }
+            .icons2{
+                display: block;
+                position: absolute;
+                top: 27%;
+                left: 50%;
+                transform: translate(-50%, -0);
+                i{
+                    font-size: 12px;
+                    line-height: 22px;
+                    margin-right: 3px;
+                    border: 2px solid $main-teal;
+                    @include roundify(26px, transparent);
+                    &:last-of-type{
+                        margin-right: 0;
+                    }  
+                    &:hover{
+                        background-color: $main-teal;
+                    }
+                }
+            }  
+            .text{
+                height: 54px;
+                padding-top: 13px;
+                h4{
+                    font-size: 14px;
+                    margin-bottom: 2px;
+                    line-height: 12px;
+                    span{
+                        display: none;
+                    }
+                }
+                span{
+                    font-size: 11px;
+                    @include l-spacing(40);
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,23 @@ $desk-1: 1024px;
 $tablet: 768px;
 $mobile: 320px;
 
+@mixin desktop {
+    @media (min-width: #{$desk-1}) {
+      @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desk-1 - 1px}) {
+      @content;
+    }
+}
+@mixin mobile {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+      @content;
+    }
+}
+
+
 h1,
 h2,
 h3,
@@ -37,26 +54,12 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @content;
 }
 @mixin column{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-@mixin desktop {
-    @media (min-width: #{$desk-1}) {
-      @content;
-    }
-}
-@mixin tablet {
-    @media (min-width: #{$tablet}) and (max-width: #{$desk-1 - 1px}) {
-      @content;
-    }
-}
-@mixin mobile {
-    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
-      @content;
-    }
 }
 @mixin l-spacing($xd) {
     letter-spacing: ($xd/ 1000) * 1em;
@@ -92,11 +95,16 @@ h1{
         top: 46px;
         left: 50%;
         transform: translate(-50%, 0);
+        @include mobile{
+            top: 42px;
+        }
     }
     img{
         margin: 0 10px;
-        // padding-bottom: 4px;
         padding-bottom: 2px;
+        @include mobile{
+            transform: scale(0.9);
+        }
     }
     hr{
         width: 37px;
@@ -108,6 +116,12 @@ h1{
         margin-bottom: 85px;
         h1{
             font-size: 29px;
+        }
+    }
+    @include mobile{
+        margin-bottom: 60px;
+        h1{
+            font-size: 27px;
         }
     }
 }
